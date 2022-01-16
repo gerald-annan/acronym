@@ -18,6 +18,10 @@ like Portable Network Graphics to its acronym (PNG).
 
 - @Teapane
 
+### Solved by
+
+- @gerald-annan
+
 ### Contributed to by
 
 - @angelikatyborska
