@@ -11,7 +11,7 @@ defmodule Acronym do
   def abbreviate(string) do
     string
     |> String.split()
-    |> Enum.map(fn str -> String.at(str, 0) end)
+    |> Enum.map(&String.at(&1, 0))
     |> Enum.join()
   end
 end
