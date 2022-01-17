@@ -9,9 +9,9 @@ defmodule Acronym do
   """
   @spec abbreviate(String.t()) :: String.t()
   def abbreviate(string) do
-    string
+    Regex.replace(~r/[-_]/, string, " ")
     |> String.split()
-    |> Enum.map(&String.at(&1, 0))
+    |> Enum.map(&(String.at(&1, 0) |> String.upcase()))
     |> Enum.join()
   end
 end
